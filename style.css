@@ -495,6 +495,33 @@ html[data-theme="dark"] .icon-btn .i-moon {
   text-wrap: balance;
 }
 
+/* supported-platform strip — the "four desktops" emphasis under the lede */
+.os-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.1rem;
+  margin-top: 1.3rem;
+  padding: 0;
+  list-style: none;
+}
+.os-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.os-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  flex: none;
+}
+
 /* hero load-in: subtle fade/slide for the copy block + the shot only */
 @keyframes riseIn {
   from {
@@ -523,6 +550,9 @@ html[data-theme="dark"] .icon-btn .i-moon {
 }
 .hero-copy > *:nth-child(5) {
   animation-delay: 0.34s;
+}
+.hero-copy > *:nth-child(6) {
+  animation-delay: 0.42s;
 }
 .hero-shot {
   animation: riseIn 0.7s var(--ease) 0.14s backwards;
